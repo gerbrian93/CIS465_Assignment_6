@@ -1,0 +1,19 @@
+<html>
+<div style="width:auto">
+<head>
+<title> Part 2 </title>
+<p>Here using moviepy I was able to extract the audio from the video as an mp3. </p>
+      <img width="auto" src="images/Q2_1.png"width="60%"height="50%">
+<P>I ran the same command but with a subclip taken of the video from second 17 to 34. I extracted the mp3 and named it accordingly</P>
+      <img width="auto" src="images/Q2_2.png"width="60%"height="50%">
+<p>Here I used the pydub audiosegemnt library. I had to download ffmpeg and set up the environment variables to get this code to run. The output audio's volume is increased by 10db for the first 3 seconds and decreased<br>by 5db for the last 3 seconds.</p>
+      <img width="auto" src="images/Q2_3.png"width="60%"height="50%">
+<p>For this part of the assignment I decided to use the dB reduction to reduce the first second by 100db. I was pretty sure this was going to work if the measured volume was less than 100 which it was.</p>
+<p>I did learn shortly after finishing this that i could have used AudioSegment.silent(1000) to make a silent one second clip that I could've instead concatenated on to the remaining segment.</p>
+      <img width="auto" src="images/Q2_4.png"width="60%"height="50%">
+<p>For the last section I found the overlay function that pydub offers. I ended up using the it.wav file in blackboard and overlayed this on the output from the previous code. It did end up working well as the "information technology" can be heard playing with the FirstsecSilent audio it was concatenated to.</p>
+      <img width="auto" src="images/Q2_5.png"width="60%"height="50%">
+<body>
+</div>
+</body>
+</html>
